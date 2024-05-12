@@ -12,7 +12,8 @@ The objective of this project is to develop a predictive model that can effectiv
 The primary question this project seeks to answer is: Can we develop a predictive model that accurately identifies potentially fraudulent loan applications based on applicant attributes and historical loan data? By analyzing applicant information, credit history, and loan characteristics, we aim to identify patterns and indicators of potential fraud and develop a model that can effectively flag suspicious loan applications for further review.
 
 #### Data Sources
-What data will you use to answer you question?
+Referred data from kaggle
+https://www.kaggle.com/datasets/nezukokamaado/auto-loan-dataset
 
 #### Methodology
 1. **Data Collection**: Gather comprehensive auto application data, including applicant information, loan details, credit history, etc.
