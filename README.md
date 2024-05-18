@@ -34,7 +34,8 @@ The fraud detection model achieved promising results in identifying potentially 
 
 #### Outline of project
 
-- [[Link to notebook 1]()](https://github.com/muralikandan/fraud_detection/blob/main/fraud_detection_model.ipynb)/
+- [Link to notebook 1](https://github.com/muralikandan/fraud_detection/blob/main/fraud_detection_model.ipynb)/
 
 
 ##### Contact and Further Information
+[Murali Kandan](https://www.linkedin.com/in/muralikandan/)
