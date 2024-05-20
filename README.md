@@ -37,24 +37,34 @@ The development of a fraud detection model for loan applications is essential fo
    - Target feature **fraud_flag** derived based on above two features like application with LTI above 0.3 and charge-off, flagged as potential fraud which like 3% of application flagged as fraudualent application - imbalanced data based on threshold which influences model and metrics to account for.
 5. **Model Development**:  To establish a performance benchmark, a baseline model using a Dummy Classifier is first created. This simplistic model sets the minimum level of predictive accuracy necessary for more complex models to surpass. Subsequently, a simple logistic regression model is trained to provide insights into the relationship between applicant attributes and the likelihood of fraud. Performance and metrics calculated as below for simple logistic regression model   
 
-- Simple LogisticRegression Model F1 Score: 0.41269841269841273 
-- Simple & Default Logistic test accuracy Score: 0.9712286158631416
-- Simple & Default Logistic train accuracy Score: 0.9701879455605963
+   - Simple LogisticRegression Model F1 Score: 0.41269841269841273 
+   - Simple & Default Logistic test accuracy Score: 0.9712286158631416
+   - Simple & Default Logistic train accuracy Score: 0.9701879455605963
 
 - ![image](https://github.com/muralikandan/fraud_detection/assets/5803282/71312b04-7dbd-4ef6-b6fd-454bf4c96c14)
 
 6. **Model Comparison & Evaluation**: Following the baseline establishment, a variety of machine learning algorithms are explored and compared, including K-Nearest Neighbors (KNN), Decision Tree, Support Vector Machine (SVM) and RandomForest classifier. Each model is evaluated based on its performance metrics, such as train accuracy, test accuracy, time taken and ROC curve with AUC comparison and F1 score, to identify the most effective approach for fraud detection in auto loan applications.
-7. **Results Interpretation**: The results interpretation phase involves analyzing the model outputs to gain insights into the driving factors behind fraud predictions and identify patterns associated with fraudulent behavior. Recommendations for further research and development are provided, including model refinement, feature importance analysis, data enhancement, real-time implementation, and monitoring and maintenance strategies.
+   - Metrics AUC & F1 score accounted as load application is a imbalanced data
+   - ![default-model-comparison-outcome](https://github.com/muralikandan/fraud_detection/assets/5803282/c708d776-522c-49e0-b12d-897f2288bf74)
+   - ![image](https://github.com/muralikandan/fraud_detection/assets/5803282/3fef1233-10e6-49a5-97cd-6c2737bfcaf5)
+
+7. **Results Interpretation**: The results interpretation phase involves analyzing the model outputs to gain insights into the driving factors behind fraud predictions and identify patterns associated with fraudulent behavior. Recommendations for further research and development are provided, including model refinement, feature importance analysis, data enhancement, real-time implementation, and monitoring and maintenance strategies. 
+      -Model improvement with adjusting model hyperparameter and metrics cross validation  
+      - ![tuned-model-comparison-outcome](https://github.com/muralikandan/fraud_detection/assets/5803282/8b08683e-09ee-433e-b88c-81d3314e483b)
+      - ![image](https://github.com/muralikandan/fraud_detection/assets/5803282/69b5917e-9c8d-4874-acd6-8671ed5526ec)
 8. **Next Steps**: Identify potential areas for model improvement and suggest recommendations for further research and development.
 
 #### Results
 The fraud detection model achieved promising results in identifying potentially fraudulent loan applications. Through rigorous data preprocessing, feature engineering, and model training, we were able to develop a model that effectively flags suspicious loan applications with high accuracy. The model's performance was evaluated using various evaluation metrics, demonstrating its effectiveness in detecting fraudulent activities in the lending process.
-< Need to include outputs from baseline model, simple modelm comparison with/without tuning>
-<Include feature importance correlation>
+      - Model Selection : Considering both AUC and F1-score, **Logistic Regression Model** works better for current data set. Though DecisionTree F1-score improved but still auc not as compared to logistic model. Similar for 'RandomForest' where F1-score not as good as Logistic model. For other models, though train and test accuracy score resonably increased but still not as much as logistic interms of both AUC & F1 score metrics. 
+      - Feature selection through correlation and feature importance technique leveraged, results as below
+      ![image](https://github.com/muralikandan/fraud_detection/assets/5803282/5572c9de-bb1d-49a8-8d4b-304fc83d15c3)
+      ![feature-importance](https://github.com/muralikandan/fraud_detection/assets/5803282/2d8f4a6d-ebd6-414f-8f0c-e8a28270b671)
+      In both the techniques, 'installment' feature identified as important which has direct impact. Same feature will impact dti which again to impact loan repayment ability as well. 
 
 #### Next steps
 1. **Data Enhancement**: Continuously collect and incorporate new data to enhance the model's predictive capabilities and adapt to evolving fraud patterns.
-2. **Real-Time Implementation**: Integrate the model into the auto loan application process for real-time fraud detection and decision-making.
+2. **Real-Time Implementation**: Integrate the model into the loan application process for real-time fraud detection and decision-making.
 3. **Monitoring and Maintenance**: Implement robust monitoring systems to track model performance and update the model regularly based on new data and emerging fraud trends.
 
 #### Outline of project
