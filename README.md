@@ -57,10 +57,17 @@ The development of a fraud detection model for loan applications is essential fo
 #### Results
 The fraud detection model achieved promising results in identifying potentially fraudulent loan applications. Through rigorous data preprocessing, feature engineering, and model training, we were able to develop a model that effectively flags suspicious loan applications with high accuracy. The model's performance was evaluated using various evaluation metrics, demonstrating its effectiveness in detecting fraudulent activities in the lending process.
       - Model Selection : Considering both AUC and F1-score, **Logistic Regression Model** works better for current data set. Though DecisionTree F1-score improved but still auc not as compared to logistic model. Similar for 'RandomForest' where F1-score not as good as Logistic model. For other models, though train and test accuracy score resonably increased but still not as much as logistic interms of both AUC & F1 score metrics. 
-      -  Feature selection through correlation and feature importance technique leveraged, results as below
-      -  ![image](https://github.com/muralikandan/fraud_detection/assets/5803282/5572c9de-bb1d-49a8-8d4b-304fc83d15c3)
-      -  ![feature-importance](https://github.com/muralikandan/fraud_detection/assets/5803282/2d8f4a6d-ebd6-414f-8f0c-e8a28270b671)
-      -  In both the techniques, 'installment' feature identified as important which has direct impact. Same feature will have impact to dti which again to impact loan repayment ability as well. So keeping installment feature evaluation would be ideal.
+         - Feature selection through correlation and feature importance technique leveraged, results as below
+         -   In both the techniques, 'installment' feature identified as important which has direct impact. Same feature will have impact to dti which again to impact loan repayment ability as well. So keeping installment feature evaluation would be ideal.
+         -    
+         
+         
+         -  ![image](https://github.com/muralikandan/fraud_detection/assets/5803282/5572c9de-bb1d-49a8-8d4b-304fc83d15c3)
+         -  ![feature-importance](https://github.com/muralikandan/fraud_detection/assets/5803282/2d8f4a6d-ebd6-414f-8f0c-e8a28270b671)
+         
+         -   In both the techniques, 'installment' feature identified as important which has direct impact. Same feature will have impact to dti which again to impact loan repayment ability as well. So keeping installment feature evaluation would be ideal.
+         
+      -  
 
 #### Next steps
 1. **Data Enhancement**: Continuously collect and incorporate new data to enhance the model's predictive capabilities and adapt to evolving fraud patterns.
