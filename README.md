@@ -60,8 +60,8 @@ The fraud detection model achieved promising results in identifying potentially 
    - Feature selection through correlation and feature importance technique leveraged, results as below
    - ![image](https://github.com/muralikandan/fraud_detection/assets/5803282/5572c9de-bb1d-49a8-8d4b-304fc83d15c3)
    - ![feature-importance](https://github.com/muralikandan/fraud_detection/assets/5803282/2d8f4a6d-ebd6-414f-8f0c-e8a28270b671)
-   - In both the techniques, 'installment' feature identified as important which has direct impact. Same feature will have impact to dti which again to impact loan repayment ability as well. So keeping installment feature evaluation would be ideal.
-   
+   - The 'installment' feature emerge as an important predictor in machine learning models for loan application fraud detection. Also exhibit better correlation with other features such as loan amount, total payment, interest rate and to extent to total income. This feature potential in-direct impact to fraud detection but understanding about high correlations with other features suggest interdependencies and potential multicollinerity, which can affect model performance and interpretation.
+        
 #### Next steps
 1. **Data Enhancement**: Continuously collect and incorporate new data to enhance the model's predictive capabilities and adapt to evolving fraud patterns.
 2. **Real-Time Implementation**: Integrate the model into the loan application process for real-time fraud detection and decision-making.
