@@ -61,11 +61,12 @@ The fraud detection model achieved promising results in identifying potentially 
    - ![image](https://github.com/muralikandan/fraud_detection/assets/5803282/5572c9de-bb1d-49a8-8d4b-304fc83d15c3)
    - ![feature-importance](https://github.com/muralikandan/fraud_detection/assets/5803282/2d8f4a6d-ebd6-414f-8f0c-e8a28270b671)
    - The 'installment' feature emerge as an important predictor in machine learning models for loan application fraud detection. Also exhibit better correlation with other features such as loan amount, total payment, interest rate and to extent to total income. This feature potential in-direct impact to fraud detection but understanding about high correlations with other features suggest interdependencies and potential multicollinerity, which can affect model performance and interpretation.
+   - Keep monitoring loan-to-income threshold & other than charge-off loan status as well for further optimization
         
 #### Next steps
 1. **Data Enhancement**: Continuously collect and incorporate new data to enhance the model's predictive capabilities and adapt to evolving fraud patterns.
 2. **Real-Time Implementation**: Integrate the model into the loan application process for real-time fraud detection and decision-making.
-3. **Monitoring and Maintenance**: Implement robust monitoring systems to track model performance and update the model regularly based on new data and emerging fraud trends.
+3. **Monitoring and Maintenance**: Implement robust monitoring systems to track model performance, metrics evaluation and update the model regularly based on new data and emerging fraud trends. Also try optimizing loan-to-income threshold based on as sample grows.
 
 #### Outline of project
 
